@@ -66,3 +66,4 @@ function loaddata() {
  todoList.innerHTML = localStorage.getItem("data");
 }
 loaddata();
+bindClicks();
