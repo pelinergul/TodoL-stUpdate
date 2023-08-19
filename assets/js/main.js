@@ -4,7 +4,6 @@ const todoInput = document.querySelector('.new-todo');
 const todoList = document.querySelector('.todoList');
 const countItem = document.querySelector('#countItem')
 todoForm.addEventListener("submit", addTodo);
-let count;
 function addTodo(e) {
     e.preventDefault();
     todoList.innerHTML += 
@@ -29,7 +28,6 @@ function markTodo() {
     savedata()
 }
 function removeTodo() {
-    debugger
     this.parentElement.remove();
     savedata()
 }
@@ -51,7 +49,6 @@ function showTodoEdit() {
     savedata()
 }
 function bindClicks() {
-    debugger
     for (const btn of document.querySelectorAll('.delete-button')) {
         btn.addEventListener('click', removeTodo);
     }
